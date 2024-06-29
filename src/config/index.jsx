@@ -13,7 +13,7 @@ import styles from "./style.module.scss";
 // const BACKEND = "LOCAL";
 
 const urls = {
-  LOCAL: "http://localhost:8088",
+  LOCAL: "https://uber-health-system.onrender.com",
   SERVER: "",
 };
 
