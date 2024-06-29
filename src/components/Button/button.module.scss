@@ -1,0 +1,27 @@
+.btn {
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+
+  &.primary {
+    background-color: #5c59e8;
+    border: 1px solid #5c59e8;
+    color: #f9f9fc;
+  }
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid #858d9d;
+    color: #858d9d;
+  }
+  &.invert {
+    background-color: #dedefa;
+    border: 1px solid #dedefa;
+    color: #5c59e8;
+  }
+}

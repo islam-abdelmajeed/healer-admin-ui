@@ -1,0 +1,18 @@
+.submit-box {
+  margin-top: 2rem;
+  & > button {
+    width: 100%;
+    color: white;
+    background-color: #2563eb;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+    &:disabled {
+      background-color: #fff;
+      border: 1px solid #e0e2e7;
+      color: grey;
+    }
+  }
+}

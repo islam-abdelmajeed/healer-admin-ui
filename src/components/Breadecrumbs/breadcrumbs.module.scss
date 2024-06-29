@@ -1,0 +1,24 @@
+.breadcrumbs {
+  & > ul {
+    display: flex;
+    gap: 0.5rem;
+
+    & > li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-transform: capitalize;
+      font-weight: 500;
+
+      & > span:last-child {
+        color: #5c59e8;
+      }
+
+      &:last-child {
+        & > span:last-child {
+          color: #667085;
+        }
+      }
+    }
+  }
+}

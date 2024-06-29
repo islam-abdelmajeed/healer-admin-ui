@@ -1,0 +1,9 @@
+.table {
+  overflow: hidden;
+  padding-right: 4rem;
+
+  & > table {
+    width: 100%;
+    // border: 1px solid red;
+  }
+}

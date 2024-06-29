@@ -1,0 +1,52 @@
+.sidebarItem {
+  color: #667085;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+
+  & > div {
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: inherit;
+    background-color: inherit;
+    transition: all ease-in-out 0.2s;
+
+    & span:last-child {
+      transform: translateY(2px);
+    }
+  }
+
+  &.active {
+    background-color: #5c59e8;
+    color: #fff;
+
+    & svg path {
+      fill: #fff;
+    }
+  }
+  &.active_stroke {
+    & svg path {
+      fill: none;
+      stroke: #fff;
+    }
+  }
+
+  & .notifications {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #f04438;
+    border-radius: 50%;
+    font-size: 0.625rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+}

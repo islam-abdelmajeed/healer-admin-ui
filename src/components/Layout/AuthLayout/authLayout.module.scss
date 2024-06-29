@@ -1,0 +1,74 @@
+.auth-layout {
+  height: 100vh;
+  display: flex;
+
+  & > div {
+    flex: 0 1 50%;
+
+    &:first-child {
+      background-color: #5c59e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      & .chart-box {
+        & > img {
+          width: 21.4375rem;
+        }
+      }
+
+      & .login-message {
+        color: #fff;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5rem;
+
+    & > div {
+      width: 65%;
+      // height: 50rem;
+      padding: 0.5rem;
+      border-radius: 3.125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      & > div:first-child {
+        background-color: #fff;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 3rem;
+        position: relative;
+
+        & a {
+          flex: 0 1 50%;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          transition: transform 0.25s;
+
+          &.active {
+            background-color: #5c59e8;
+            color: #fff;
+            border-radius: 3rem;
+            transition: transform 0.25s;
+          }
+        }
+      }
+    }
+  }
+}

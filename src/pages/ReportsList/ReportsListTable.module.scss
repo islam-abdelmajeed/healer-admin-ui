@@ -1,0 +1,29 @@
+.modal-content {
+  padding: 1.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  & h4 {
+    font-weight: 600;
+  }
+
+  & > div {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+
+    & .primary {
+      background-color: #f04438;
+      border: 1px solid #f04438;
+      outline: none;
+      color: #fff;
+      font-weight: inherit;
+      padding: 0.625rem;
+      border-radius: 0.5rem;
+      text-transform: capitalize;
+    }
+  }
+}

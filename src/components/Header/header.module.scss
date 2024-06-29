@@ -1,0 +1,60 @@
+.header {
+  background-color: #fff;
+  height: 4.5rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+
+  & > .custombutton {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+
+    & > img {
+      height: inherit;
+    }
+
+    & > span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 0.75rem;
+      width: 0.75rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background-color: green;
+    }
+  }
+
+  & > .info {
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    & > h4 {
+      font-size: inherit;
+      font-weight: inherit;
+      color: #1a1c21;
+    }
+
+    & > h5 {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: #667085;
+    }
+  }
+  & > .logoutButton {
+    margin-left: auto; // Push to the end
+    // padding: 0.5rem 1rem;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    background-color: #ef4a24;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}

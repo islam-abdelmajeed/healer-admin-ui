@@ -1,0 +1,51 @@
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  gap: 1rem;
+  border: 0;
+  font-weight: 600;
+  color: #667085;
+  text-transform: capitalize;
+
+  &>svg {
+    margin-left: auto;
+  }
+
+  &.active {
+    background-color: rgba($color: #5c59e8, $alpha: 0.15);
+    border-radius: 0.625rem;
+    color: #5c59e8;
+
+    &>svg {
+      transform: rotate(180deg);
+    }
+
+    & svg path {
+      fill: #5c59e8;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 1rem 0;
+  font-weight: 600;
+
+  & a {
+    color: #667085;
+    display: block;
+    padding: 0.5rem;
+    padding-left: 2.8rem;
+  }
+
+  & a.active {
+    background-color: #5c59e8;
+    border-radius: 0.5rem;
+    color: #fff;
+  }
+}
